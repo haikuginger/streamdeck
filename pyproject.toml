@@ -1,0 +1,25 @@
+[project]
+name = "streamdeck"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "appdirs>=1.4.4",
+    "attrs>=25.3.0",
+    "black>=25.1.0",
+    "click>=8.2.1",
+    "hid>=1.0.7",
+    "mypy>=1.16.0",
+    "mypy-extensions>=1.1.0",
+    "toml>=0.10.2",
+    "typing-extensions>=4.14.0",
+]
+
+[dependency-groups]
+dev = [
+    "streamdeck",
+]
+
+[tool.uv.sources]
+streamdeck = { workspace = true }
